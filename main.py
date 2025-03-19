@@ -1,3 +1,5 @@
+from scrapeweb import scrape
+from llm import conclude_meaning
 from fastapi import FastAPI,HTTPException
 app = FastAPI()
 
@@ -25,7 +27,10 @@ def root():
 def find_slang(slang: str) -> str: #func_name(param_name: param_data_type ) -> return_data_type
     result = slang_collection.find_one({"key": slang})
     if result is None:
+        conclude_meaning(slang=slang)
         raise HTTPException(status_code=404, detail="Slang not found")
+    
+
     return result["value"]
 
 @app.post("/save")

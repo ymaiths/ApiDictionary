@@ -1,38 +1,45 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
+from seleniumbase import Driver
 
-# ตั้งค่า WebDriver
-options = webdriver.ChromeOptions()
-options.add_argument("--headless")  # รันแบบไม่เปิดเบราว์เซอร์
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+driver = Driver()
+driver.get("https://dictionary.orst.go.th/")
 
-# เปิดเว็บพจนานุกรมไทย
-driver.get("https://dictionary.orst.go.th/index.php")
+WebDriverWait(driver, 10).until(
+    EC.presence_of_element_located((By.ID, "txt_input"))
+)
 
-try:
-    # รอให้ input box ปรากฏ (timeout 10 วินาที)
-    search_box = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.ID, "searchword"))
-    )
+# Find the input box and enter the word
+slang = "ตำ"
+input_element = driver.find_element(By.ID, "txt_input")
+input_element.clear()
+input_element.send_keys(slang)
 
-    # พิมพ์คำศัพท์และกด Enter
-    search_box.send_keys("อาหาร")
-    search_box.send_keys(Keys.RETURN)
+# Find and click the submit button
+submit_button = driver.find_element(By.ID, "btnSubmit")
+submit_button.click()
 
-    # รอให้ผลลัพธ์แสดง
-    meaning = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.CLASS_NAME, "box_result"))
-    )
+# Wait for the results to load
+WebDriverWait(driver, 10).until(
+    EC.presence_of_element_located((By.ID, "r_lookup"))
+)
 
-    print(meaning.text)
+# Wait for all meaning elements to be present dynamically
+WebDriverWait(driver, 10).until(
+    EC.presence_of_all_elements_located((By.XPATH, '//*[@id="r_lookup"]/div/div[2]/div/div[2]'))
+)
 
-except Exception as e:
-    print("เกิดข้อผิดพลาด:", e)
+# Extract all meanings
+meaning = [
+    element.text for element in driver.find_elements(By.XPATH, '//*[@id="r_lookup"]/div/div[2]/div/div[2]')
+]
 
-# ปิดเบราว์เซอร์
+# Store in list variable
+dict_meaning = [slang, meaning]
+
+# Close the driver
 driver.quit()
+
+print(dict_meaning)
