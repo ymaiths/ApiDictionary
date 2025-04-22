@@ -7,7 +7,8 @@ os.environ["TAVILY_API_KEY"] = "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"
 
 def search_flow():
     tools = TavilySearchResults()
-    result = tools.invoke("What is the weather in Tokyo?")
+    result = tools.invoke("คำว่า ฉ่ำ แปลว่าอะไรในภาษาสแลง")
+    print(result)
 
 
 if __name__ == "__main__":
