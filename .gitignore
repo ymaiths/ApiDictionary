@@ -4,5 +4,6 @@
 /.venv
 .venv
 .env
-/.venv
+/venv
 bunch*
+src/__pycache__
