@@ -1,10 +1,13 @@
+from enum import Enum
 import json
+from typing import List
 from langchain_community.tools.tavily_search import TavilySearchResults
 import os
 from langchain_openai import ChatOpenAI
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
 from langchain_core.prompts import ChatPromptTemplate
+from src.type import SlangDefinition
 
 load_dotenv()
 
@@ -32,12 +35,6 @@ example = """
 """
 
 
-class SlangDefinition(BaseModel):
-    meaning: str = Field(description="คำสแลงที่ต้องการค้นหา")
-    definition: str = Field(description="ความหมายของคำสแลงนี้")
-    examples: str = Field(description="ตัวอย่างการใช้คำสแลงนี้")
-
-
 def search_flow(word):
     tools = TavilySearchResults(max_results=3, exclude_domains=[
                                 "youtube.com", "tiktok.com", "slang.in.th", "dict.longdo.com"], search_depth="advanced")
@@ -50,13 +47,12 @@ def search_flow(word):
     return buffer
 
 
-if __name__ == "__main__":
+def main(word: str):
     model = ChatOpenAI(temperature=0, model="gpt-4o-mini")
-    word = "ป้ายยา"
+    word = word
 
     slang_search_result = search_flow(word)
-    structured_model = model.with_structured_output(SlangDefinition) 
-    print(slang_search_result)
+    structured_model = model.with_structured_output(SlangDefinition)
     prompt = ChatPromptTemplate.from_messages(
         [("system", system), ("system", "{context}"), ("user", "{example}"), ("user", "{prompt}")])
 
@@ -66,4 +62,8 @@ if __name__ == "__main__":
         "example": example,
         "prompt": f"คำว่า {word} แปลว่าอะไร ภาษาสแลง"
     })
-    print(result)
+    return result
+
+
+if __name__ == "__main__":
+    print(main("ฉ่ำ"))

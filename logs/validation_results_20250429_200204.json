@@ -1,0 +1,23 @@
+[
+  {
+    "word": "นาตาชา",
+    "result": {
+      "word": "นาตาชา",
+      "meaning": "คนช่างสืบ, ช่างสงสัย",
+      "part_of_speech": "คำคุณศัพท์",
+      "examples": "รับบท “นาตาชา” ยืนหนึ่ง ขอไปสืบเรื่องชาวบ้านก่อน."
+    },
+    "validation": {
+      "word": "นาตาชา",
+      "word_meaning_metrics": {
+        "bertscore": 0.7751884460449219,
+        "semantic_textual_similarity": 0.7751884460449219
+      },
+      "part_of_speech_metrics": 0,
+      "example_metrics": {
+        "perplexity": 1.690068244934082,
+        "meaning_matrix": 0.5915920734405518
+      }
+    }
+  }
+]
