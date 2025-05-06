@@ -9,7 +9,6 @@ class PartOfSpeech(Enum):
     ADJECTIVE = "คำคุณศัพท์"
     ADVERB = "คำวิเศษณ์"
 
-
 class SlangDefinition(BaseModel):
     word: str = Field(description="คำสแลงที่ต้องการค้นหา")
     part_of_speech: PartOfSpeech = Field(

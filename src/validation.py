@@ -7,11 +7,17 @@ from sklearn.metrics import precision_score, recall_score, f1_score
 import torch
 from transformers import BertTokenizer, BertModel
 from bert_score import BERTScorer
+from sentence_transformers import SentenceTransformer, util
+import re
+from transformers import GPT2Tokenizer, GPT2LMHeadModel
+import torch
+import math
 
 
+model = SentenceTransformer('all-MiniLM-L6-v2')
 class Truth(BaseModel):
     word: str
-    part_of_speech: str
+    part_of_speech: List[str]
     meaning: str
     example: str
 
@@ -20,9 +26,14 @@ class TruthReader:
     def __init__(self, path):
         self.data = pd.read_csv(path)
         self.data = self.data.to_dict(orient='records')
-        self.data = [Truth(word=row['word'], part_of_speech=row['part_of_speech'],
-                           meaning=row['meaning'], example=row['example']) for row in self.data]
-
+        self.data = [
+            Truth(
+                word=row['word'],
+                part_of_speech=[p.strip() for p in row['part_of_speech'].split(';')],
+                meaning=row['meaning'],
+                example=row['example']
+            ) for row in self.data
+        ]
 
 class Validation:
     def __init__(self, truths: List[Truth]):
@@ -39,25 +50,44 @@ class Validation:
         P, R, F1 = scorer.score([text1], [text2])
         return F1
 
-    def calculate_semantic_textual_similarity(self, text1: str, text2: str) -> float:
-        """Calculate Semantic Textual Similarity between two texts"""
-        # For simplicity, we'll use the same BERT-based approach but could be extended
-        return self.calculate_bertscore(text1, text2)
+    def calculate_semantic_textual_similarity(self, sentence1: str, sentence2: str) -> float:
 
-    def calculate_part_of_speech_metrics(self, actual_pos: str, predicted_pos: str) -> bool:
-        """Calculate precision, recall, and F1 score for part of speech"""
-        # For part of speech validation, we're checking exact matches
-        is_correct = 1 if actual_pos.strip() == predicted_pos.strip() else 0
-        return is_correct
+        # Encode sentences into embeddings
+        embedding1 = model.encode(sentence1, convert_to_tensor=True)
+        embedding2 = model.encode(sentence2, convert_to_tensor=True)
+        
+        # Compute cosine similarity
+        similarity_score = util.pytorch_cos_sim(embedding1, embedding2).item()
+        return similarity_score
 
-    def calculate_perplexity(self, example: str, reference_example: str) -> float:
+    def calculate_part_of_speech_metrics(self, actual_pos: List[str], predicted_pos: Union[str, List[str]]) -> bool:
+        if isinstance(predicted_pos, str):
+            predicted_pos = [predicted_pos]
+        return any(p in actual_pos for p in predicted_pos)
+    
+    def calculate_perplexity_transformers(self, sentence, model_name='gpt2'):
+        tokenizer = GPT2Tokenizer.from_pretrained(model_name)
+        model = GPT2LMHeadModel.from_pretrained(model_name)
+        model.eval()
+
+        inputs = tokenizer(sentence, return_tensors='pt')
+        with torch.no_grad():
+            outputs = model(**inputs, labels=inputs["input_ids"])
+            loss = outputs.loss
+            perplexity = torch.exp(loss)
+        return perplexity.item()
+
+
+    def calculate_perplexity(self, meaning, example, word) -> float:
         """Calculate perplexity-like score for example sentences"""
         # Since true perplexity requires a language model, we'll use semantic similarity as a proxy
-        similarity = self.calculate_semantic_textual_similarity(
-            example, reference_example)
+        meanings = re.split('; |, ', meaning)
+        for i in meanings[::-1]:
+            result = example.replace(word, i)
+        similarity = self.calculate_perplexity_transformers(result)
         # Convert similarity to a perplexity-like score (lower is better for perplexity)
         # Adding small constant to avoid division by zero
-        return 1.0 / (similarity + 0.0001)
+        return similarity
 
     def calculate_meaning_matrix(self, meaning: str, reference_meaning: str, example: str, reference_example: str) -> float:
         """Calculate meaning matrix that reflects minimum semantic correspondence"""
@@ -82,7 +112,7 @@ class Validation:
             },
             "part_of_speech_metrics": self.calculate_part_of_speech_metrics(truth.part_of_speech, part_of_speech),
             "example_metrics": {
-                "perplexity": self.calculate_perplexity(example, truth.example),
+                "perplexity": self.calculate_perplexity(meaning, example, word),
                 "meaning_matrix": self.calculate_meaning_matrix(meaning, truth.meaning, example, truth.example)
             }
         }

@@ -1,0 +1,23 @@
+[
+  {
+    "word": "นาตาชา",
+    "result": {
+      "word": "นาตาชา",
+      "meaning": "คนช่างสืบ, ช่างสงสัย",
+      "part_of_speech": "คำคุณศัพท์",
+      "examples": "นาตาชาในกลุ่มนี้ชอบหาข้อมูลของคนอื่นเสมอ!"
+    },
+    "validation": {
+      "word": "นาตาชา",
+      "word_meaning_metrics": {
+        "bertscore": 0.7751882672309875,
+        "semantic_textual_similarity": 0.7923641204833984
+      },
+      "part_of_speech_metrics": 0,
+      "example_metrics": {
+        "perplexity": 6.802297592163086,
+        "meaning_matrix": 0.24589809775352478
+      }
+    }
+  }
+]

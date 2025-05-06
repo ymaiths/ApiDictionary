@@ -38,7 +38,7 @@ if __name__ == "__main__":
         result = main(i.word)
         print(result)
         verdict = validation.validate(
-            result.word, result.meaning, result.part_of_speech.value, result.examples)
+            result.word, result.meaning, result.part_of_speed.value, result.examples)
         print(verdict)
 
         # Convert tensors to native Python types
@@ -50,8 +50,14 @@ if __name__ == "__main__":
             "result": {
                 "word": result.word,
                 "meaning": result.meaning,
-                "part_of_speech": result.part_of_speech.value,
+                "part_of_speech": result.part_of_speed.value,
                 "examples": result.examples
+            },
+            "truth": {
+                "word": i.word,
+                "meaning": i.meaning,
+                "part_of_speech": i.part_of_speech,
+                "examples": i.example
             },
             "validation": verdict_native
         })
