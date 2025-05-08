@@ -1,0 +1,1404 @@
+[
+  {
+    "word": "นาตาชา",
+    "result": {
+      "word": "นาตาชา",
+      "meaning": "คนที่สอดรู้สอดเห็น",
+      "part_of_speech": "คำนาม",
+      "examples": "พิมพ์อะไรมาก็ระวังหน่อย ห้องนี้มีนาตาชา"
+    },
+    "truth": {
+      "word": "นาตาชา",
+      "meaning": "คนที่มีพฤติกรรมพยายามล้วงความลับผู้อื่น",
+      "part_of_speech": [
+        "คำนาม"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "นาตาชา",
+      "word_meaning_metrics": {
+        "bertscore": 0.9999999403953552,
+        "semantic_textual_similarity": 1.0
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 6.003488540649414,
+        "meaning_matrix": 0.15673750638961792
+      }
+    }
+  },
+  {
+    "word": "จึ้ง",
+    "result": {
+      "word": "จึ้ง",
+      "meaning": "อึ้ง ตกใจ แต่ในแง่ดี",
+      "part_of_speech": "คำวิเศษณ์",
+      "examples": "\"ดูกระเป๋าใบนี้สิ จึ้งมาก!\""
+    },
+    "truth": {
+      "word": "จึ้ง",
+      "meaning": "ตะลึง ที่น่าประทับใจ",
+      "part_of_speech": [
+        "คำคุณศัพท์",
+        "คำวิเศษณ์"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "จึ้ง",
+      "word_meaning_metrics": {
+        "bertscore": 0.7659096717834473,
+        "semantic_textual_similarity": 0.5000724792480469
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 10.07526969909668,
+        "meaning_matrix": 0.09152442961931229
+      }
+    }
+  },
+  {
+    "word": "ฉ่ำ",
+    "result": {
+      "word": "ฉ่ำ",
+      "meaning": "มาก, เยอะ",
+      "part_of_speech": "คำวิเศษณ์",
+      "examples": "งานเข้ามาแบบฉ่ำๆ, ดารุณีสวยฉ่ำ"
+    },
+    "truth": {
+      "word": "ฉ่ำ",
+      "meaning": "มาก เยอะ",
+      "part_of_speech": [
+        "คำวิเศษณ์"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "ฉ่ำ",
+      "word_meaning_metrics": {
+        "bertscore": 0.876124382019043,
+        "semantic_textual_similarity": 0.9857017397880554
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 6.413036346435547,
+        "meaning_matrix": 0.26062172651290894
+      }
+    }
+  },
+  {
+    "word": "ตะโกน",
+    "result": {
+      "word": "ตะโกน",
+      "meaning": "ดีที่สุด ดีมากกว่าปกติ",
+      "part_of_speech": "คำวิเศษณ์",
+      "examples": "วันนี้แต่งตัวหล่อสุดๆ หล่อแบบตะโกน"
+    },
+    "truth": {
+      "word": "ตะโกน",
+      "meaning": "มาก",
+      "part_of_speech": [
+        "คำวิเศษณ์"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "ตะโกน",
+      "word_meaning_metrics": {
+        "bertscore": 0.49000170826911926,
+        "semantic_textual_similarity": 0.2985072135925293
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 6.3893513679504395,
+        "meaning_matrix": 0.15673750638961792
+      }
+    }
+  },
+  {
+    "word": "หวาน",
+    "result": {
+      "word": "หวาน",
+      "meaning": "คนโกหก พูดไม่จริง",
+      "part_of_speech": "คำคุณศัพท์",
+      "examples": "\"หวาน\" มาจากเหตุการณ์ที่ “หนูรัตน์ ธิดาพร” เน็ตไอดอลอีกหนึ่งคนต่อว่า คนชื่อหวาน ที่มากล่าวหาว่าเธอโกหก ดังนั้นจึงเป็นที่รู้กันในหมู่ชาวเน็ตว่า หวาน มีความหมายถึง คนโกหก พูดไม่จริง นั่นเอง"
+    },
+    "truth": {
+      "word": "หวาน",
+      "meaning": "โกหก",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "หวาน",
+      "word_meaning_metrics": {
+        "bertscore": 0.9077005982398987,
+        "semantic_textual_similarity": 0.9020670652389526
+      },
+      "part_of_speech_metrics": false,
+      "example_metrics": {
+        "perplexity": 4.737240791320801,
+        "meaning_matrix": 0.05978136509656906
+      }
+    }
+  },
+  {
+    "word": "ดอทคอม",
+    "result": {
+      "word": "ดอทคอม",
+      "meaning": "คนที่เซ่อซ่า ทำอะไรทะเล่อทะล่า ทำตัวแปลก ๆ พยายามแสดงตัวให้เป็นที่ปรากฏต่อสาธารณชน พยายามแสดงตัวหรือความเห็นทั้ง ๆ ที่ไม่มีใครร้องขอ",
+      "part_of_speech": "คำนาม",
+      "examples": "คนนั้นดอทคอมมาก ทำอะไรก็ทะเล่อทะล่าไปหมด"
+    },
+    "truth": {
+      "word": "ดอทคอม",
+      "meaning": "ยุ่งเรื่องคนอื่น",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "ดอทคอม",
+      "word_meaning_metrics": {
+        "bertscore": 0.7415765523910522,
+        "semantic_textual_similarity": 0.5075035095214844
+      },
+      "part_of_speech_metrics": false,
+      "example_metrics": {
+        "perplexity": 4.781781196594238,
+        "meaning_matrix": 0.15673750638961792
+      }
+    }
+  },
+  {
+    "word": "ตำ",
+    "result": {
+      "word": "ตำ",
+      "meaning": "ซื้อ, การได้มาครอบครอง",
+      "part_of_speech": "คำกริยา",
+      "examples": "ไปตำกัน, ของชิ้นนี้มันเวิร์คมา ไอเทมนี้ต้องไปตำ, ต้องไปตำบ้าง"
+    },
+    "truth": {
+      "word": "ตำ",
+      "meaning": "ซื้อ",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "ตำ",
+      "word_meaning_metrics": {
+        "bertscore": 0.7751884460449219,
+        "semantic_textual_similarity": 0.7923640608787537
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 4.4983720779418945,
+        "meaning_matrix": 0.21325770020484924
+      }
+    }
+  },
+  {
+    "word": "ฉีดยา",
+    "result": {
+      "word": "ฉีดยา",
+      "meaning": "ขั้นสุดกว่าการป้ายยา คืออวย หรือชื่นชมแบบดูไม่จริง",
+      "part_of_speech": "คำกริยา",
+      "examples": "อวยยศกันขนาดนี้ “ฉีดยา” ใช่ไหมเนี่ย"
+    },
+    "truth": {
+      "word": "ฉีดยา",
+      "meaning": "ชมเกินจริง",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "ฉีดยา",
+      "word_meaning_metrics": {
+        "bertscore": 0.8472196459770203,
+        "semantic_textual_similarity": 0.7751989960670471
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 7.704128742218018,
+        "meaning_matrix": 0.21031343936920166
+      }
+    }
+  },
+  {
+    "word": "มู่ลี่",
+    "result": {
+      "word": "มู่ลี่",
+      "meaning": "บูลลี่แต่ใช้ในเชิงตลกขำขัน ไม่โกรธจริงจัง",
+      "part_of_speech": "คำกริยา",
+      "examples": "เธออย่ามามู่ลี่ฉันนะ"
+    },
+    "truth": {
+      "word": "มู่ลี่",
+      "meaning": "แกล้งแบบไม่จริงจัง",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "มู่ลี่",
+      "word_meaning_metrics": {
+        "bertscore": 0.9077005982398987,
+        "semantic_textual_similarity": 0.9020670652389526
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 7.2649078369140625,
+        "meaning_matrix": 0.28481525182724
+      }
+    }
+  },
+  {
+    "word": "บ้ง",
+    "result": {
+      "word": "บ้ง",
+      "meaning": "แย่, ไม่ได้เรื่อง, พัง, ไม่รอด",
+      "part_of_speech": "คำวิเศษณ์",
+      "examples": "วันนี้เน็ตบ้งมาก, วันนี้ไปกินผู้มาไม่แซ่บเลย บ้งมากแม่, วันนี้หล่อนแต่งหน้าได้บ้งมาก"
+    },
+    "truth": {
+      "word": "บ้ง",
+      "meaning": "แย่",
+      "part_of_speech": [
+        "คำคุณศัพท์",
+        "คำวิเศษณ์"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "บ้ง",
+      "word_meaning_metrics": {
+        "bertscore": 0.6115559339523315,
+        "semantic_textual_similarity": 0.36227455735206604
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 4.710666179656982,
+        "meaning_matrix": 0.21325770020484924
+      }
+    }
+  },
+  {
+    "word": "บูด",
+    "result": {
+      "word": "บูด",
+      "meaning": "ล้มเหลว, ไม่ได้มาตรฐาน, ไม่ได้เรื่อง",
+      "part_of_speech": "คำคุณศัพท์",
+      "examples": "\"กิจกรรมวันนี้บูดมาก ไม่เอนจอยเลย!\""
+    },
+    "truth": {
+      "word": "บูด",
+      "meaning": "แย่",
+      "part_of_speech": [
+        "คำคุณศัพท์",
+        "คำวิเศษณ์"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "บูด",
+      "word_meaning_metrics": {
+        "bertscore": 0.7060389518737793,
+        "semantic_textual_similarity": 0.5267579555511475
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 7.570949077606201,
+        "meaning_matrix": 0.09152442961931229
+      }
+    }
+  },
+  {
+    "word": "บิด",
+    "result": {
+      "word": "บิด",
+      "meaning": "โกง, เบี้ยว, หักหลัง",
+      "part_of_speech": "คำกริยา",
+      "examples": "ใช้ในประโยคว่า \"เขาบิดเงินฉันไป\""
+    },
+    "truth": {
+      "word": "บิด",
+      "meaning": "ผิดสัญญา ผิดคำพูด",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "บิด",
+      "word_meaning_metrics": {
+        "bertscore": 0.7442139387130737,
+        "semantic_textual_similarity": 0.5686160326004028
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 8.935064315795898,
+        "meaning_matrix": 0.21722829341888428
+      }
+    }
+  },
+  {
+    "word": "ป้ายยา",
+    "result": {
+      "word": "ป้ายยา",
+      "meaning": "ชักชวนหรือชักจูงให้คนอื่นอยากได้หรืออยากทำตามสิ่งใดสิ่งหนึ่งด้วยการแนะนำข้อดีสารพัดจนต้องซื้อหรือทำตาม",
+      "part_of_speech": "คำกริยา",
+      "examples": "เพื่อนๆ ช่วยกันป้ายยาเครื่องสำอางตัวใหม่จนฉันต้องซื้อตาม"
+    },
+    "truth": {
+      "word": "ป้ายยา",
+      "meaning": "ชักชวน",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "ป้ายยา",
+      "word_meaning_metrics": {
+        "bertscore": 0.9999999403953552,
+        "semantic_textual_similarity": 1.0
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 5.252445220947266,
+        "meaning_matrix": 0.15673750638961792
+      }
+    }
+  },
+  {
+    "word": "เกาเหลา",
+    "result": {
+      "word": "เกาเหลา",
+      "meaning": "ไม่ชอบกัน, เข้ากันไม่ได้",
+      "part_of_speech": "คำนาม",
+      "examples": "สมชายเกาเหลากับเพื่อน"
+    },
+    "truth": {
+      "word": "เกาเหลา",
+      "meaning": "ไม่ถูกกัน",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "เกาเหลา",
+      "word_meaning_metrics": {
+        "bertscore": 0.7751884460449219,
+        "semantic_textual_similarity": 0.7923640608787537
+      },
+      "part_of_speech_metrics": false,
+      "example_metrics": {
+        "perplexity": 6.000743865966797,
+        "meaning_matrix": 0.28481525182724
+      }
+    }
+  },
+  {
+    "word": "เฟียสกี",
+    "result": {
+      "word": "เฟียสกี",
+      "meaning": "มั่น แรง",
+      "part_of_speech": "คำคุณศัพท์",
+      "examples": "\"ชะนีคนนั้นอ่ะ อย่าเฟียสกีให้มาก ไม่ได้สวย\""
+    },
+    "truth": {
+      "word": "เฟียสกี",
+      "meaning": "มั่นใจ",
+      "part_of_speech": [
+        "คำวิเศษณ์"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "เฟียสกี",
+      "word_meaning_metrics": {
+        "bertscore": 0.6304724216461182,
+        "semantic_textual_similarity": 0.5205161571502686
+      },
+      "part_of_speech_metrics": false,
+      "example_metrics": {
+        "perplexity": 7.462576866149902,
+        "meaning_matrix": 0.13413168489933014
+      }
+    }
+  },
+  {
+    "word": "ฟาด",
+    "result": {
+      "word": "ฟาด",
+      "meaning": "สวยมาก, ดูดีมาก หรือ โมโห, เหวี่ยง, เอาจริง",
+      "part_of_speech": "คำกริยา",
+      "examples": "\"วันนี้แต่งตัวสวยมาก ฟาดมาก!\" หมายถึง สวยมาก ดูดีมาก \n\"โดนด่ามาขนาดนี้ เดี๋ยวฉันจะฟาดกลับ!\" หมายถึง โมโห เหวี่ยง เอาจริง"
+    },
+    "truth": {
+      "word": "ฟาด",
+      "meaning": "ดีมาก",
+      "part_of_speech": [
+        "คำคุณศัพท์",
+        "คำวิเศษณ์"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "ฟาด",
+      "word_meaning_metrics": {
+        "bertscore": 0.5491534471511841,
+        "semantic_textual_similarity": 0.2978018522262573
+      },
+      "part_of_speech_metrics": false,
+      "example_metrics": {
+        "perplexity": 5.805486679077148,
+        "meaning_matrix": -0.01593822054564953
+      }
+    }
+  },
+  {
+    "word": "นอย",
+    "result": {
+      "word": "นอย",
+      "meaning": "งอน หรือ อาการเซ็ง หรือ หงุดหงิดอึดอัด",
+      "part_of_speech": "คำกริยา",
+      "examples": "ชั้นนอยอ่ะแก แปลว่า ชั้นรู้สึกรำคาญอ่ะแก"
+    },
+    "truth": {
+      "word": "นอย",
+      "meaning": "อารมณ์ไม่ดี",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "นอย",
+      "word_meaning_metrics": {
+        "bertscore": 0.6302574276924133,
+        "semantic_textual_similarity": 0.5120233297348022
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 6.003189563751221,
+        "meaning_matrix": 0.11584951728582382
+      }
+    }
+  },
+  {
+    "word": "อ่อม",
+    "result": {
+      "word": "อ่อม",
+      "meaning": "รู้สึกอ่อนล้า หมดพลัง หรือไม่สมบูรณ์แบบ, อย่าเพิ่งยอมแพ้หรืออย่าเพิ่งท้อ",
+      "part_of_speech": "คำคุณศัพท์",
+      "examples": "วันนี้รู้สึกอ่อมว่ะแก, อย่าอ่อม"
+    },
+    "truth": {
+      "word": "อ่อม",
+      "meaning": "น่าเบื่อ",
+      "part_of_speech": [
+        "คำคุณศัพท์"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "อ่อม",
+      "word_meaning_metrics": {
+        "bertscore": 0.49237683415412903,
+        "semantic_textual_similarity": 0.36319953203201294
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 3.3421573638916016,
+        "meaning_matrix": 0.11991409212350845
+      }
+    }
+  },
+  {
+    "word": "โฮ่ง",
+    "result": {
+      "word": "โฮ่ง",
+      "meaning": "เจ๋ง คูล ดี",
+      "part_of_speech": "คำวิเศษณ์",
+      "examples": "วันนี้หนูแต่งหน้าโฮ่งป่ะ"
+    },
+    "truth": {
+      "word": "โฮ่ง",
+      "meaning": "ดีมาก",
+      "part_of_speech": [
+        "คำคุณศัพท์",
+        "คำวิเศษณ์"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "โฮ่ง",
+      "word_meaning_metrics": {
+        "bertscore": 0.8472196459770203,
+        "semantic_textual_similarity": 0.7751989960670471
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 7.705043792724609,
+        "meaning_matrix": 0.28481525182724
+      }
+    }
+  },
+  {
+    "word": "ตัวพ่อ",
+    "result": {
+      "word": "ตัวพ่อ",
+      "meaning": "คนที่เก่งหรือเด่นอย่างมากหรือเป็นผู้นำด้านใดด้านหนึ่ง",
+      "part_of_speech": "คำนาม",
+      "examples": "ไมเคิล แจ๊กสัน เป็นตัวพ่อ"
+    },
+    "truth": {
+      "word": "ตัวพ่อ",
+      "meaning": "ผู้ชายที่มีความสามารถในด้านนั้น ๆ",
+      "part_of_speech": [
+        "คำนาม"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "ตัวพ่อ",
+      "word_meaning_metrics": {
+        "bertscore": 0.9077005386352539,
+        "semantic_textual_similarity": 0.9020670652389526
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 5.493188858032227,
+        "meaning_matrix": 0.11584951728582382
+      }
+    }
+  },
+  {
+    "word": "ตัวแม่",
+    "result": {
+      "word": "ตัวแม่",
+      "meaning": "คนที่เป็นที่สุดในด้านใดด้านหนึ่ง",
+      "part_of_speech": "คำนาม",
+      "examples": "\\\"เรามันตัวแม่\\\" แปลว่า เราเก่ง เราเริ่ดที่สุด ไม่มีใครมีความสามารถเท่าเราแล้ว"
+    },
+    "truth": {
+      "word": "ตัวแม่",
+      "meaning": "ผู้หญิงที่มีความสามารถในด้านนั้น ๆ",
+      "part_of_speech": [
+        "คำนาม"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "ตัวแม่",
+      "word_meaning_metrics": {
+        "bertscore": 0.9077005386352539,
+        "semantic_textual_similarity": 0.9020670652389526
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 5.169888973236084,
+        "meaning_matrix": 0.03509046137332916
+      }
+    }
+  },
+  {
+    "word": "วาป",
+    "result": {
+      "word": "วาป",
+      "meaning": "การเดินทางอย่างรวดเร็วหรือการปรากฏตัวอย่างฉับพลัน",
+      "part_of_speech": "คำกริยา",
+      "examples": "\"ฉันวาปไปเที่ยวทะเลแล้วนะ\""
+    },
+    "truth": {
+      "word": "วาป",
+      "meaning": "ช่องทางติดต่อหรือติดตาม",
+      "part_of_speech": [
+        "คำนาม"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "วาป",
+      "word_meaning_metrics": {
+        "bertscore": 0.9999999403953552,
+        "semantic_textual_similarity": 1.0
+      },
+      "part_of_speech_metrics": false,
+      "example_metrics": {
+        "perplexity": 6.039865970611572,
+        "meaning_matrix": 0.26691144704818726
+      }
+    }
+  },
+  {
+    "word": "ลำไย",
+    "result": {
+      "word": "ลำไย",
+      "meaning": "รำคาญ",
+      "part_of_speech": "คำกริยา",
+      "examples": "ฉันลำไยเธอมาก"
+    },
+    "truth": {
+      "word": "ลำไย",
+      "meaning": "รำคาญ",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "ลำไย",
+      "word_meaning_metrics": {
+        "bertscore": 0.9999999403953552,
+        "semantic_textual_similarity": 1.0
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 7.580391883850098,
+        "meaning_matrix": 0.28481525182724
+      }
+    }
+  },
+  {
+    "word": "เงาะ",
+    "result": {
+      "word": "เงาะ",
+      "meaning": "งง",
+      "part_of_speech": "คำกริยา",
+      "examples": "อยากจะคุยกับวัยรุ่นเหรอ ลองเข้าไปดูพจนานุกรม ศัพท์วัยรุ่นของ The Viewpoints สิจะได้ไม่ 'เงาะ' นะ"
+    },
+    "truth": {
+      "word": "เงาะ",
+      "meaning": "งง",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "เงาะ",
+      "word_meaning_metrics": {
+        "bertscore": 1.0,
+        "semantic_textual_similarity": 1.0000001192092896
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 7.689127445220947,
+        "meaning_matrix": 0.08756882697343826
+      }
+    }
+  },
+  {
+    "word": "ส้ม",
+    "result": {
+      "word": "ส้ม",
+      "meaning": "อยากได้หรือต้องการ, ยุ่งเรื่องคนอื่น ขึ้นอยู่กับสถานการณ์",
+      "part_of_speech": "คำคุณศัพท์",
+      "examples": "\"เห็นสาวนี้แล้วส้มหนัด\" แปลว่า ชอบมาก อยากได้มาก มีอารมณ์,  \"วันนี้งานยุ่งมาก ส้มไปหมด\" แปลว่า ยุ่งมาก"
+    },
+    "truth": {
+      "word": "ส้ม",
+      "meaning": "ยุ่งเรื่องคนอื่น",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "ส้ม",
+      "word_meaning_metrics": {
+        "bertscore": 0.7556677460670471,
+        "semantic_textual_similarity": 0.6766083240509033
+      },
+      "part_of_speech_metrics": false,
+      "example_metrics": {
+        "perplexity": 4.2487969398498535,
+        "meaning_matrix": 0.031230568885803223
+      }
+    }
+  },
+  {
+    "word": "มะนาว",
+    "result": {
+      "word": "มะนาว",
+      "meaning": "มโน",
+      "part_of_speech": "คำนาม",
+      "examples": "อย่ามะนาว"
+    },
+    "truth": {
+      "word": "มะนาว",
+      "meaning": "คิดไปเอง",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "มะนาว",
+      "word_meaning_metrics": {
+        "bertscore": 0.9999999403953552,
+        "semantic_textual_similarity": 1.0
+      },
+      "part_of_speech_metrics": false,
+      "example_metrics": {
+        "perplexity": 6.970860958099365,
+        "meaning_matrix": 0.28481525182724
+      }
+    }
+  },
+  {
+    "word": "กล้วย",
+    "result": {
+      "word": "กล้วย",
+      "meaning": "ง่าย",
+      "part_of_speech": "คำคุณศัพท์",
+      "examples": "ง่ายมาก"
+    },
+    "truth": {
+      "word": "กล้วย",
+      "meaning": "ง่าย",
+      "part_of_speech": [
+        "คำคุณศัพท์"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "กล้วย",
+      "word_meaning_metrics": {
+        "bertscore": 0.9999997615814209,
+        "semantic_textual_similarity": 0.9999998807907104
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 5.770703315734863,
+        "meaning_matrix": 0.1073608249425888
+      }
+    }
+  },
+  {
+    "word": "ละมุด",
+    "result": {
+      "word": "ละมุด",
+      "meaning": "เนียน",
+      "part_of_speech": "คำคุณศัพท์",
+      "examples": "ฉันละมุดมากตอนสอบผ่าน"
+    },
+    "truth": {
+      "word": "ละมุด",
+      "meaning": "เนียน",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "ละมุด",
+      "word_meaning_metrics": {
+        "bertscore": 0.9999998807907104,
+        "semantic_textual_similarity": 1.0
+      },
+      "part_of_speech_metrics": false,
+      "example_metrics": {
+        "perplexity": 5.972813606262207,
+        "meaning_matrix": 0.28481525182724
+      }
+    }
+  },
+  {
+    "word": "แตงโม",
+    "result": {
+      "word": "แตงโม",
+      "meaning": "อ้วน",
+      "part_of_speech": "คำนาม",
+      "examples": "\"แกอ้วนมาก แตงโมสุดๆ\""
+    },
+    "truth": {
+      "word": "แตงโม",
+      "meaning": "อ้วน",
+      "part_of_speech": [
+        "คำคุณศัพท์"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "แตงโม",
+      "word_meaning_metrics": {
+        "bertscore": 0.9999997615814209,
+        "semantic_textual_similarity": 1.0
+      },
+      "part_of_speech_metrics": false,
+      "example_metrics": {
+        "perplexity": 8.998839378356934,
+        "meaning_matrix": 0.16080321371555328
+      }
+    }
+  },
+  {
+    "word": "เชอร์รี่",
+    "result": {
+      "word": "เชอร์รี่",
+      "meaning": "คนไม่มีประสบการณ์, กระหรี่",
+      "part_of_speech": "คำนาม",
+      "examples": "\"เชอร์รี่\"  ใช้เรียกคนที่ไม่มีประสบการณ์, หรือใช้ในความหมายที่ไม่ดี เช่น กระหรี่"
+    },
+    "truth": {
+      "word": "เชอร์รี่",
+      "meaning": "ผู้หญิงที่มีเพศสัมพันธ์กับผู้อื่นไปทั่ว",
+      "part_of_speech": [
+        "คำนาม"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "เชอร์รี่",
+      "word_meaning_metrics": {
+        "bertscore": 0.7751884460449219,
+        "semantic_textual_similarity": 0.7923640608787537
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 5.253845691680908,
+        "meaning_matrix": 0.19157177209854126
+      }
+    }
+  },
+  {
+    "word": "อ้อย",
+    "result": {
+      "word": "อ้อย",
+      "meaning": "น่ารัก, อ่อย",
+      "part_of_speech": "คำกริยา",
+      "examples": "วันแรกๆคิดว่าเงียบๆ แต่ วันนี้อ้อยมากกกกก"
+    },
+    "truth": {
+      "word": "อ้อย",
+      "meaning": "ยั่วยวน",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "อ้อย",
+      "word_meaning_metrics": {
+        "bertscore": 0.5916410684585571,
+        "semantic_textual_similarity": 0.7633744478225708
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 6.856605529785156,
+        "meaning_matrix": 0.04262848570942879
+      }
+    }
+  },
+  {
+    "word": "สตอเบอรี่",
+    "result": {
+      "word": "สตอเบอรี่",
+      "meaning": "ตอแหล พูดไม่จริง",
+      "part_of_speech": "คำคุณศัพท์",
+      "examples": "\"ไอ้สตอเบอรี่\"  \"มึงอย่ามาสตอเบอรี่กู\""
+    },
+    "truth": {
+      "word": "สตอเบอรี่",
+      "meaning": "เสแสร้ง",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "สตอเบอรี่",
+      "word_meaning_metrics": {
+        "bertscore": 0.9077005982398987,
+        "semantic_textual_similarity": 0.9020670652389526
+      },
+      "part_of_speech_metrics": false,
+      "example_metrics": {
+        "perplexity": 5.501918315887451,
+        "meaning_matrix": 0.23479816317558289
+      }
+    }
+  },
+  {
+    "word": "มะม่วง",
+    "result": {
+      "word": "มะม่วง",
+      "meaning": "โง่",
+      "part_of_speech": "คำคุณศัพท์",
+      "examples": "\"มะม่วง\" ใช้แทนคำว่า โง่ เช่น \"แกนี่มะม่วงจริงๆ\""
+    },
+    "truth": {
+      "word": "มะม่วง",
+      "meaning": "โง่",
+      "part_of_speech": [
+        "คำคุณศัพท์"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "มะม่วง",
+      "word_meaning_metrics": {
+        "bertscore": 0.9999999403953552,
+        "semantic_textual_similarity": 1.0
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 8.002640724182129,
+        "meaning_matrix": 0.189730703830719
+      }
+    }
+  },
+  {
+    "word": "บีทรูท",
+    "result": {
+      "word": "บีทรูท",
+      "meaning": "พืชหัวชนิดหนึ่ง มีสีแดงเข้ม นิยมนำมาประกอบอาหาร",
+      "part_of_speech": "คำนาม",
+      "examples": "\"พวกแกเอาบีทรูทใส่เบอร์เกอร์ด้วยเหรอ?\", \"เปิดหัวใจ ให้ยัยบีทรูท\""
+    },
+    "truth": {
+      "word": "บีทรูท",
+      "meaning": "เน่าเสีย",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "บีทรูท",
+      "word_meaning_metrics": {
+        "bertscore": 0.41272252798080444,
+        "semantic_textual_similarity": 0.19832265377044678
+      },
+      "part_of_speech_metrics": false,
+      "example_metrics": {
+        "perplexity": 4.145678520202637,
+        "meaning_matrix": 0.17606863379478455
+      }
+    }
+  },
+  {
+    "word": "ปัง",
+    "result": {
+      "word": "ปัง",
+      "meaning": "เลิศ, เก๋, ดีเยี่ยม",
+      "part_of_speech": "คำคุณศัพท์",
+      "examples": "\"วันนี้ฉันแต่งตัวปังมาก!\""
+    },
+    "truth": {
+      "word": "ปัง",
+      "meaning": "ดีมาก",
+      "part_of_speech": [
+        "คำคุณศัพท์",
+        "คำวิเศษณ์"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "ปัง",
+      "word_meaning_metrics": {
+        "bertscore": 0.6133821606636047,
+        "semantic_textual_similarity": 0.47079309821128845
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 9.412043571472168,
+        "meaning_matrix": 0.15212959051132202
+      }
+    }
+  },
+  {
+    "word": "ติดแกลม",
+    "result": {
+      "word": "ติดแกลม",
+      "meaning": "ชีวิตที่ติดสวย ติดหรู ติดของแพง",
+      "part_of_speech": "คำคุณศัพท์",
+      "examples": "\"ฉันติดแกลมมาก ชอบใช้ของแบรนด์เนม\""
+    },
+    "truth": {
+      "word": "ติดแกลม",
+      "meaning": "ติดสวย ติดหรู",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "ติดแกลม",
+      "word_meaning_metrics": {
+        "bertscore": 0.9751286506652832,
+        "semantic_textual_similarity": 0.9578516483306885
+      },
+      "part_of_speech_metrics": false,
+      "example_metrics": {
+        "perplexity": 7.120182037353516,
+        "meaning_matrix": 0.16080321371555328
+      }
+    }
+  },
+  {
+    "word": "เยี่ยว",
+    "result": {
+      "word": "เยี่ยว",
+      "meaning": "ดีมากๆ ยอดเยี่ยมมาก",
+      "part_of_speech": "คำคุณศัพท์",
+      "examples": "วันนี้ฉันสอบได้คะแนนเยี่ยวมากเลย"
+    },
+    "truth": {
+      "word": "เยี่ยว",
+      "meaning": "ดีมาก",
+      "part_of_speech": [
+        "คำคุณศัพท์",
+        "คำวิเศษณ์"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "เยี่ยว",
+      "word_meaning_metrics": {
+        "bertscore": 0.9077005982398987,
+        "semantic_textual_similarity": 0.9020670652389526
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 6.5628228187561035,
+        "meaning_matrix": 0.28481525182724
+      }
+    }
+  },
+  {
+    "word": "ปั๊ว",
+    "result": {
+      "word": "ปั๊ว",
+      "meaning": "ดี, เลิศ, เก่ง, เยี่ยม, สุดยอด",
+      "part_of_speech": "คำคุณศัพท์",
+      "examples": "ใช้แทนคำว่า ดี, เลิศ, เก่ง, เยี่ยม, สุดยอด"
+    },
+    "truth": {
+      "word": "ปั๊ว",
+      "meaning": "ดีมาก",
+      "part_of_speech": [
+        "คำคุณศัพท์",
+        "คำวิเศษณ์"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "ปั๊ว",
+      "word_meaning_metrics": {
+        "bertscore": 0.5201969742774963,
+        "semantic_textual_similarity": 0.2610471546649933
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 6.947914123535156,
+        "meaning_matrix": 0.17655324935913086
+      }
+    }
+  },
+  {
+    "word": "แกง",
+    "result": {
+      "word": "แกง",
+      "meaning": "คำกริยาขั้นกว่าของการต้ม หมายถึงการหลอก, ทำให้อับอายขายหน้า จนมีสภาพเปื่อยไปหมดเหมือนอาหารในแกง",
+      "part_of_speech": "คำกริยา",
+      "examples": "\"เธอโดนแกงหม้อใหญ่มาก ใครเค้าให้ใส่เสื้อสีดำมา!\""
+    },
+    "truth": {
+      "word": "แกง",
+      "meaning": "แกล้ง",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "แกง",
+      "word_meaning_metrics": {
+        "bertscore": 0.7528188228607178,
+        "semantic_textual_similarity": 0.5664343237876892
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 6.800352096557617,
+        "meaning_matrix": 0.09152442961931229
+      }
+    }
+  },
+  {
+    "word": "จ้อจี้",
+    "result": {
+      "word": "จ้อจี้",
+      "meaning": "โกหก",
+      "part_of_speech": "คำกริยา",
+      "examples": "\"ที่บอกว่าเขาชอบเราอ่ะ อย่าจ้อจี้ นะ\""
+    },
+    "truth": {
+      "word": "จ้อจี้",
+      "meaning": "ล้อเล่น",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "จ้อจี้",
+      "word_meaning_metrics": {
+        "bertscore": 0.3185889720916748,
+        "semantic_textual_similarity": 0.20611754059791565
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 8.19166374206543,
+        "meaning_matrix": 0.13413168489933014
+      }
+    }
+  },
+  {
+    "word": "ต๊าซ",
+    "result": {
+      "word": "ต๊าซ",
+      "meaning": "ดีเลิศ, ดีที่สุด",
+      "part_of_speech": "คำคุณศัพท์",
+      "examples": "\"ลุคนี้ต๊าซมาก!\""
+    },
+    "truth": {
+      "word": "ต๊าซ",
+      "meaning": "สุดยอด",
+      "part_of_speech": [
+        "คำคุณศัพท์",
+        "คำวิเศษณ์"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "ต๊าซ",
+      "word_meaning_metrics": {
+        "bertscore": 0.7751884460449219,
+        "semantic_textual_similarity": 0.7923640608787537
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 12.249802589416504,
+        "meaning_matrix": 0.15212959051132202
+      }
+    }
+  },
+  {
+    "word": "โป๊ะแตก",
+    "result": {
+      "word": "โป๊ะแตก",
+      "meaning": "ความลับแตก",
+      "part_of_speech": "คำนาม",
+      "examples": "ความลับแตก,  เช่น เพื่อนโป๊ะแตกเรื่องที่แอบชอบรุ่นพี่"
+    },
+    "truth": {
+      "word": "โป๊ะแตก",
+      "meaning": "ถูกจับได้ ถูกผู้อื่นล้วงรู้",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "โป๊ะแตก",
+      "word_meaning_metrics": {
+        "bertscore": 0.9077005386352539,
+        "semantic_textual_similarity": 0.9020670652389526
+      },
+      "part_of_speech_metrics": false,
+      "example_metrics": {
+        "perplexity": 4.590236186981201,
+        "meaning_matrix": 0.19588565826416016
+      }
+    }
+  },
+  {
+    "word": "ตุ้บ",
+    "result": {
+      "word": "ตุ้บ",
+      "meaning": "ไม่ได้ดังหวัง, ผิดหวัง",
+      "part_of_speech": "คำกริยา",
+      "examples": "\"ลงทุนไปตั้งเยอะ แต่ดันตุ้บ!\""
+    },
+    "truth": {
+      "word": "ตุ้บ",
+      "meaning": "ผิดหวัง",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "ตุ้บ",
+      "word_meaning_metrics": {
+        "bertscore": 0.7751884460449219,
+        "semantic_textual_similarity": 0.7923640608787537
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 7.952331066131592,
+        "meaning_matrix": 0.09152442961931229
+      }
+    }
+  },
+  {
+    "word": "ยม",
+    "result": {
+      "word": "ยม",
+      "meaning": "สิ่งที่อยู่มานานจนไม่น่าสนใจหรือน่าเบื่อ, เหนื่อย, น่าเบื่อ",
+      "part_of_speech": "คำคุณศัพท์",
+      "examples": "คอนเทนต์ที่ยม, สินค้าแฟชั่นที่ยม, ทำงานจนยม, หนังเรื่องนี้ยม"
+    },
+    "truth": {
+      "word": "ยม",
+      "meaning": "เหนื่อย",
+      "part_of_speech": [
+        "คำคุณศัพท์"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "ยม",
+      "word_meaning_metrics": {
+        "bertscore": 0.7060389518737793,
+        "semantic_textual_similarity": 0.5267579555511475
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 2.106426239013672,
+        "meaning_matrix": 0.2285206913948059
+      }
+    }
+  },
+  {
+    "word": "เฉียบ",
+    "result": {
+      "word": "เฉียบ",
+      "meaning": "ถูกใจ, โดนใจ, เริ่ด",
+      "part_of_speech": "คำคุณศัพท์",
+      "examples": "เวลาที่เพื่อนพูดอะไรโดนๆ เราอ่านจะตอบไปสั้นๆ ว่า เฉียบมาก แค่นี้จบจ้า"
+    },
+    "truth": {
+      "word": "เฉียบ",
+      "meaning": "ดี",
+      "part_of_speech": [
+        "คำคุณศัพท์",
+        "คำวิเศษณ์"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "เฉียบ",
+      "word_meaning_metrics": {
+        "bertscore": 0.7060389518737793,
+        "semantic_textual_similarity": 0.5267579555511475
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 6.785187244415283,
+        "meaning_matrix": 0.07097172737121582
+      }
+    }
+  },
+  {
+    "word": "เอือด",
+    "result": {
+      "word": "เอือด",
+      "meaning": "ร้อนมากๆ, สกปรก, ไม่อาบน้ำ หรือหมักหมม",
+      "part_of_speech": "คำคุณศัพท์",
+      "examples": "เมษานี้คือเอือดมาก, เอือด 555 ภาษาใต้แปลว่าสกปรก ไม่อาบน้ำ หรือหมักหมม"
+    },
+    "truth": {
+      "word": "เอือด",
+      "meaning": "ร้อน",
+      "part_of_speech": [
+        "คำคุณศัพท์"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "เอือด",
+      "word_meaning_metrics": {
+        "bertscore": 0.3816375732421875,
+        "semantic_textual_similarity": 0.292364239692688
+      },
+      "part_of_speech_metrics": true,
+      "example_metrics": {
+        "perplexity": 6.271248817443848,
+        "meaning_matrix": 0.1576598584651947
+      }
+    }
+  },
+  {
+    "word": "เม็ด",
+    "result": {
+      "word": "เม็ด",
+      "meaning": "ยาเสพติด หรือ คนที่เรื่องมาก ขึ้นอยู่กับบริบท",
+      "part_of_speech": "คำนาม",
+      "examples": "\"ตบเม็ด\" คือการเสพยาเสพติด,  \"เม็ดเยอะ\" หมายถึงคนที่เรื่องมาก"
+    },
+    "truth": {
+      "word": "เม็ด",
+      "meaning": "เรื่องมาก",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "เม็ด",
+      "word_meaning_metrics": {
+        "bertscore": 0.3933483362197876,
+        "semantic_textual_similarity": 0.2598647177219391
+      },
+      "part_of_speech_metrics": false,
+      "example_metrics": {
+        "perplexity": 3.197577476501465,
+        "meaning_matrix": 0.214687317609787
+      }
+    }
+  },
+  {
+    "word": "จกตา",
+    "result": {
+      "word": "จกตา",
+      "meaning": "หลอก ปลอม ไม่จริง เฟค",
+      "part_of_speech": "คำคุณศัพท์",
+      "examples": "แต่งรูปแบบจกตามาก ไม่ตรงปกสุด"
+    },
+    "truth": {
+      "word": "จกตา",
+      "meaning": "หลอกลวง",
+      "part_of_speech": [
+        "คำกริยา"
+      ],
+      "examples": "a "
+    },
+    "validation": {
+      "word": "จกตา",
+      "word_meaning_metrics": {
+        "bertscore": 0.8082337975502014,
+        "semantic_textual_similarity": 0.6750888228416443
+      },
+      "part_of_speech_metrics": false,
+      "example_metrics": {
+        "perplexity": 6.845186710357666,
+        "meaning_matrix": 0.15673750638961792
+      }
+    }
+  }
+]

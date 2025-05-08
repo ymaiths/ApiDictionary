@@ -7,12 +7,14 @@ load_dotenv()
 openai_api_key = os.getenv("OPENAI_API_KEY")
 gemini_api_key = os.getenv("GEMINI_API_KEY")
 anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
+typhoon_api_key = os.getenv("TYPHOON_API_KEY")
 
 
 class ModelName(Enum):
     OPENAI = "openai"
     GEMINI = "gemini"
     CLAUDE = "claude"
+    TYPHOON = "typhoon"
 
 
 class LLM:
@@ -46,6 +48,11 @@ class LLM:
             from langchain_anthropic import ChatAnthropic
             model_version = self.model_version or "claude-3-sonnet-20240229"
             return ChatAnthropic(temperature=self.temperature, model=model_version, api_key=anthropic_api_key)
+
+        elif self.model_name == "typhoon":
+            from langchain_openai import ChatOpenAI
+            model_version = self.model_version or "typhoon-v2-70b-instruct"
+            return ChatOpenAI(temperature=self.temperature, model=model_version, api_key=typhoon_api_key, base_url='https://api.opentyphoon.ai/v1')
 
         else:
             raise ValueError(
