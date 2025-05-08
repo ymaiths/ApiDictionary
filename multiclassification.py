@@ -52,16 +52,8 @@ def evaluate_pos_classification(y_true, y_pred):
     print(classification_report(y_true_bin, y_pred_bin, target_names=mlb.classes_))
 
 if __name__ == "__main__":
-    # import json
-    # from pprint import pprint
 
-    # with open('logs/validation_results_20250506_110029.json', 'r', encoding='utf-8') as json_data:
-    #     d = json.load(json_data)
-    #     json_data.close()
-    #     pprint(d)
-    
-    # print(d[0]["result"]["examples"])
-    results = load_results("logs/validation_results_20250506_133024.json")
+    results = load_results("logs/validation_results_20250506_164950.json")
     y_true, y_pred = extract_labels(results)
     for i, (true, pred) in enumerate(zip(y_true, y_pred)):
         print(f"[{i}] True: {true} | Pred: {pred}")

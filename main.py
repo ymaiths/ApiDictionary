@@ -3,11 +3,17 @@ import json
 from typing import List
 from langchain_community.tools.tavily_search import TavilySearchResults
 import os
-from langchain_openai import ChatOpenAI
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
 from langchain_core.prompts import ChatPromptTemplate
 from src.type import SlangDefinition
+#GPT
+from langchain_openai import ChatOpenAI
+#claude
+from langchain_anthropic import ChatAnthropic
+#germini
+from langchain_google_genai import ChatGoogleGenerativeAI
+
 
 load_dotenv()
 
@@ -32,6 +38,10 @@ example = """
 ี๊คน: คำว่า "ตึงมาก" แปลว่าอะไร?
 ความรู้: คำว่า "ตัวตึง" คำว่า \"ตัวตึง\" คือ ศัพท์สแลงที่วัยรุ่นและโลกออนไลน์นิยมใช้กันอย่างแพร่หลาย มีความหมายสื่อถึงการเป็นที่หนึ่ง, ตัวท็อป, เป็นเลิศ, สุดยอด คล้าย ๆ กับคำว่า "ตัวเต็ง"
 คำตอบ: {{"meaning": "ตึงมาก", "definition": "ตัวท็อป, เป็นเลิศ, สุดยอด", "examples": "กูโครตตึง"}}
+
+คน: คำว่า \"ตัวแม่\" แปลว่าอะไร?
+ความรู้:  \"ตัวแม่\" คือ คนที่เป็นที่สุดในด้านใดด้านหนึ่ง หรือชื่นชมว่าเก่ง ตัวอย่าง : เรามันตัวแม่ แปลว่า เราเก่ง เราเริ่ดที่สุด ไม่มีใครมีความสามารถเท่าเราแล้ว
+คำตอบ: {{"meaning": "ตัวแม่", "definition": "คนที่เป็นที่สุดในด้านใดด้านหนึ่ง", "examples": "เรามันตัวแม่"}}
 """
 
 
@@ -48,10 +58,17 @@ def search_flow(word):
 
 
 def main(word: str):
-    model = ChatOpenAI(temperature=0, model="gpt-4o-mini")
+    #GPT
+    # model = ChatOpenAI(temperature=0, model="gpt-4o-mini")
+    #claude
+    model = ChatAnthropic(model="claude-3-sonnet-20240229", temperature=0)
+    #gemini
+    # model = ChatGoogleGenerativeAI(model="gemini-1.5-pro", temperature=0)
+    
     word = word
 
     slang_search_result = search_flow(word)
+    
     structured_model = model.with_structured_output(SlangDefinition)
     prompt = ChatPromptTemplate.from_messages(
         [("system", system), ("system", "{context}"), ("user", "{example}"), ("user", "{prompt}")])
