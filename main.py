@@ -7,18 +7,10 @@ from pydantic import BaseModel, Field
 from dotenv import load_dotenv
 from langchain_core.prompts import ChatPromptTemplate
 from src.type import SlangDefinition
-#GPT
-from langchain_openai import ChatOpenAI
-#claude
-from langchain_anthropic import ChatAnthropic
-#germini
-from langchain_google_genai import ChatGoogleGenerativeAI
-
-
+from src.llm import LLM
 load_dotenv()
 
 tavily_api_key = os.getenv("TAVILY_API_KEY")
-openai_api_key = os.getenv("OPENAI_API_KEY")
 
 system = """
 คุณเป็นผู้เชี่ยวชาญด้านการ *สรุป* คำสแลง/ภาษาโซเชียล/ภาษาวัยรุ่น
@@ -33,7 +25,7 @@ example = """
 
 ี๊คน: คำว่า \"ฉ่ำ\" แปลว่าอะไร?
 ความรู้: ให้ความหมายของ \"ฉ่ำ\" ในว่า เป็นคำวิเศษณ์ที่มีความหมายว่า ชุ่มชื่น, ชุ่มน้ำในตัว แต่ด้วยความสร้างสรรค์ของคนไทยได้นำคำนี้มาใช้ในอีกความหมายว่า มาก หรือ เยอะ
-คำตอบ: {{"meaning": \"ฉ่ำ\", "definition": "มาก หรือ เยอะ", "examples": "ฉ่ำมากกับกลุ่มนี้นะ!"}}
+คำตอบ: {{"meaning": \"ฉ่ำ\", "definition": "มาก หรือ เยอะ", "examples": "ขนาดวันนี้วันหยุดงานยังฉำ่ขนาดนี้"}}
 
 ี๊คน: คำว่า "ตึงมาก" แปลว่าอะไร?
 ความรู้: คำว่า "ตัวตึง" คำว่า \"ตัวตึง\" คือ ศัพท์สแลงที่วัยรุ่นและโลกออนไลน์นิยมใช้กันอย่างแพร่หลาย มีความหมายสื่อถึงการเป็นที่หนึ่ง, ตัวท็อป, เป็นเลิศ, สุดยอด คล้าย ๆ กับคำว่า "ตัวเต็ง"
@@ -47,9 +39,10 @@ example = """
 
 def search_flow(word):
     tools = TavilySearchResults(max_results=3, exclude_domains=[
-                                "youtube.com", "tiktok.com", "slang.in.th", "dict.longdo.com"], search_depth="advanced")
+                                "youtube.com", "tiktok.com", "slang.in.th", "dict.longdo.com"], search_depth="advanced", tavily_api_key=tavily_api_key)
     result = tools.invoke(
         f"คำว่า \"{word}\" แปลว่าอะไร ภาษาวัยรุ่น")
+    print("tavily result \n", result, "\n\n")
 
     buffer = "ข้อมูลจริง \n ----------- \n"
     for i in result:
@@ -58,17 +51,11 @@ def search_flow(word):
 
 
 def main(word: str):
-    #GPT
-    # model = ChatOpenAI(temperature=0, model="gpt-4o-mini")
-    #claude
-    model = ChatAnthropic(model="claude-3-sonnet-20240229", temperature=0)
-    #gemini
-    # model = ChatGoogleGenerativeAI(model="gemini-1.5-pro", temperature=0)
-    
+    model = LLM(model_name="gemini")
     word = word
 
     slang_search_result = search_flow(word)
-    
+
     structured_model = model.with_structured_output(SlangDefinition)
     prompt = ChatPromptTemplate.from_messages(
         [("system", system), ("system", "{context}"), ("user", "{example}"), ("user", "{prompt}")])
