@@ -69,5 +69,10 @@ def main(word: str):
     return result
 
 
+def get_slang_meaning(word: str):
+    result = main(word)
+    return result.meaning
+
+
 if __name__ == "__main__":
-    print(main("ฉ่ำ"))
+    print(get_slang_meaning("ฉ่ำ"))
